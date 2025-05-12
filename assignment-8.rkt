@@ -149,6 +149,7 @@
        (and
         (draw-solid-line (calc-posn i) (calc-posn (+ i 1)) col)
         (feat (calc-posn i))
+        (sleep-for-a-while .3) 
         (make-n-regular-polygon-w-features c r (+ i 1) n col feat)))]))
 
 ;; make-n-regular-polygon-w-centerline : posn number number number -> #true
