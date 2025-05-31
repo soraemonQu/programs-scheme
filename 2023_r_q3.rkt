@@ -20,6 +20,7 @@
 (define (between_low_high2 ls low high)
   (filter2 ls (lambda (x y) (and x y)) >= <= low high))
 (between_low_high2 L 2 7)
+;; => (list 2 3 4 5 6 7)
 
 ;; 3
 (define-struct StudentScore (name class score))
